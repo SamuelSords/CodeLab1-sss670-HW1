@@ -5,23 +5,23 @@ using UnityEngine;
 public class Collide : MonoBehaviour
 {
     public GameObject explosion;
-    public float h = 0;
+    public float hit = 0;
     private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("hit detected");
         
-        h += 1;
-        Debug.Log(h);
+        hit += 1;
+        Debug.Log(hit);
 
-            if (h == 5)
+            if (hit == 5)
         {
             Debug.Log("Game Over");
         }
-            if (h == 10)
+            if (hit == 10)
         {
             Debug.Log("The Game is over, Please stop playing");
         }
-            if (h >= 15)
+            if (hit >= 15)
         {
             Debug.Log("Ouch!");
             GameObject e = Instantiate(explosion) as GameObject;
