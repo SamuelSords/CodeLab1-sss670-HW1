@@ -18,7 +18,6 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update() //draw
     {
-        Debug.Log("Goodbye, World!");
 
         if(Input.GetKey(KeyCode.D))
         {
